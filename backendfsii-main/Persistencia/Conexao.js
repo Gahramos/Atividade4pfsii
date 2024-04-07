@@ -1,5 +1,4 @@
 import mysql from "mysql2/promise"; //Teste local
-
 export default async function Conect() {
   if (global.conexao) {
     return await global.conexao.getConnection();
@@ -20,9 +19,7 @@ export default async function Conect() {
   return await global.conexao.getConnection();
 }
 
-
 // import mysql from "mysql2/promise"; //Teste cloudpanel
-
 // export default async function Conect() {
 //   if (global.conexao) {
 //     return await global.conexao.getConnection();
